@@ -9,6 +9,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     builtin: true,
     createdAt: 1693744292000,
     enable: true,
+    onlyNodeRuntime: false,
   },
   {
     name: "计算器",
@@ -18,6 +19,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     builtin: true,
     createdAt: 1693744292000,
     enable: true,
+    onlyNodeRuntime: false,
   },
   {
     name: "网页浏览器",
@@ -28,6 +30,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     builtin: true,
     createdAt: 1693744292000,
     enable: true,
+    onlyNodeRuntime: false,
   },
   {
     name: "维基百科",
@@ -37,5 +40,59 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     builtin: true,
     createdAt: 1694235989000,
     enable: false,
+    onlyNodeRuntime: false,
+  },
+  {
+    name: "DALL·E",
+    toolName: "dalle_image_generator",
+    lang: "cn",
+    description:
+      "DALL·E 可以根据自然语言的描述创建逼真的图像和艺术。使用本插件需要配置 Cloudflare R2 对象存储服务。",
+    builtin: true,
+    createdAt: 1694703673000,
+    enable: false,
+    onlyNodeRuntime: false,
+  },
+  {
+    name: "Stable Diffusion",
+    toolName: "stable_diffusion_image_generator",
+    lang: "cn",
+    description:
+      "Stable Diffusion 图像生成模型。使用本插件需要配置 Cloudflare R2 对象存储服务以及 stable-diffusion-webui 接口。",
+    builtin: true,
+    createdAt: 1688899480510,
+    enable: false,
+    onlyNodeRuntime: false,
+  },
+  {
+    name: "Arxiv",
+    toolName: "arxiv",
+    lang: "cn",
+    description: "使用 Arxiv 接口搜索并获取文章信息。",
+    builtin: true,
+    createdAt: 1699265115000,
+    enable: false,
+    onlyNodeRuntime: false,
+  },
+  {
+    name: "PDF浏览器",
+    toolName: "pdf-browser",
+    lang: "cn",
+    description: "可以从pdf文件的url中提取信息或总结其内容。",
+    builtin: true,
+    createdAt: 1700907315000,
+    enable: false,
+    onlyNodeRuntime: true,
+  },
+  {
+    name: "WolframAlphaTool",
+    toolName: "wolfram_alpha_llm",
+    lang: "cn",
+    description:
+      "在需要回答有关数学、科学、技术、文化、社会和日常生活的问题时非常有用。",
+    builtin: true,
+    createdAt: 1703846656000,
+    enable: false,
+    onlyNodeRuntime: false,
   },
 ];
